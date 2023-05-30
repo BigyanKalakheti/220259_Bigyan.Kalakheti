@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --bg-color : black;
+            --main-color : orange;
+            --text-color : aliceblue;
+        }
+
+        body{
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        span{
+            background-color: var(--main-color);
+            border-radius: 10px;
+            color: var(--bg-color);
+        }
+        .form{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input{
+            margin-bottom: 15px;
+            height: 30px;
+            width: 300px;
+        }
+        button{
+            background-color: var(--main-color);
+            color:var(--bg-color) ;
+            border-radius: 5px;
+            width: 30%;
+            height: 28px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="form">
+        <h1>Form<span>Practice</span></h1>  
+        <div>
+            
+            <form action="">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required >
+                <label for="email">Email</label> 
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" name="password2" required>
+                <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+    </section>
+</body>
+</html>

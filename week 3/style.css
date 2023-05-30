@@ -1,0 +1,62 @@
+a{
+    display: inline-block;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-twitter{
+    color: skyblue
+}
+.fa-youtube{
+    color: red;
+}
+i:hover{
+    color: black
+}
+
+p{
+    color: blue;
+}
+
+#second{
+    color: red;
+}
+
+.third{
+    color: brown;
+}
+
+input[type="submit"]{
+    margin-left: 15px;
+    display: inline-block
+}
+
+.box{
+    margin: 1opx;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: right;
+    background-color: aquamarine;
+    animation: up 10s alternate-reverse infinite;
+    
+}
+p{
+    animation: side 10s linear infinite;
+}
+
+@keyframes side{
+    to { transform: translateX(-100%);}
+   
+}
+
+@keyframes up{
+    to {transform: translateY(-100%);
+        background-image: linear-gradient(to right,skyblue,white);}
+}
+
+
+

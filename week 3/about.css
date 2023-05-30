@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    padding: opx;
+
+}
+.navbar{
+    display: flex;
+    background-image: linear-gradient(to right,aquamarine,aqua);
+    justify-content: space-between;
+}
+
+.navtitle{
+    display:flex;
+    padding: 15px;
+}
+
+.navelements{
+    display: flex;
+}
+.navelements ul{
+    list-style: none;
+    display: flex;
+
+}
+.navelements ul li{
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.card{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    text-align: center;
+}
+.container{
+    text-align: center;
+}
+
+section {
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+/* Style the contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.fa-facebook{
+  color: blue;
+}
+
+.fa-twitter{
+  color: skyblue
+}
+.fa-youtube{
+  color: red;
+}
+i{
+  padding: 10px;
+}
+
+i:hover{
+  color: black;
+
+}

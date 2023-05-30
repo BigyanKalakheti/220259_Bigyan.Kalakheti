@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid aquamarine;
+        }
+        .darkmode{
+            background-color: black;
+            color: antiquewhite;
+        }
+    </style>
+    <script>
+        // function light(){
+        //     document.getElementById("body").style.backgroundColor="white"
+
+        // }
+        // function dark(){
+        //     document.getElementById("body").style.backgroundColor="black"
+
+        // }
+        function dark(){
+            document.getElementById("container").classList.add("darkmode")
+        }
+        function light(){
+            document.getElementById("container").classList.remove("darkmode")
+        }
+    </script>
+</head>
+<body id="body">
+    <div id="container">
+        <h1>This is heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt officiis explicabo adipisci culpa fugit hic nemo ipsa aspernatur accusamus qui dolorem vel voluptate ad a ex soluta voluptates, omnis consectetur.</p>
+    </div>
+    <button onclick="light()" id="light">light mode</button>
+    <button onclick="dark()" id="dark">darkmode </button>
+
+
+
+<button onclick="document.getElementById('myImage').src='image.jpeg'">Click to change image</button>
+<img id="myImage" src="myimage.png" style="size: 60vh;">
+
+
+
+<!-- <button onclick="light()" id="light">light mode</button>
+<button onclick="dark()" id="dark">darkmode </button> -->
+</body>
+</html>

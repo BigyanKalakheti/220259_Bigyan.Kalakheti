@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: radial-gradient(aqua,rgb(80, 83, 84));
+            background-attachment: fixed;
+        }
+        h1{
+            font-family: Arial, sans-serif;
+            font-size: 50px;
+            font-weight: 100;
+            font-style: italic;
+        }
+        
+
+        p{
+            font-family: Arial,sans-serif;
+            font-size: 16px;
+        }
+           /* flex method */
+           .center-align{
+            width: 100%;
+            background: inherit;
+            border: 3px double gold;
+            display: flex;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* grid method */
+        .center-align1{
+            display: grid;
+            place-items: center;
+            background: inherit;
+            height: 300px;
+            border: 3px double rgb(97, 33, 249);
+        }
+
+           /* position method */
+           .center-align3{
+            position: relative;
+            height: 300px;
+            background: salmon;
+
+        }
+        
+        .center-align3 > p{
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>hi my name is bigyan kalakheti</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore voluptates, hic ipsa eaque consectetur velit vitae quaerat possimus explicabo fugiat molestias aliquam sunt mollitia ipsam corporis magnam sapiente deserunt unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, minus ipsam! Eum, molestias voluptatem quisquam accusamus et ducimus animi, beatae obcaecati maiores est repellendus quidem aspernatur perferendis quaerat eligendi optio.</p>
+    <div class="center-align">This is center OO</div>
+    <div class="center-align1">This is center OO</div>
+    <div class="center-align3"><p>This is center OO. This is center OOThis is center OOThis is center OOThis is center OOThis is center OOThis is center OOThis is center OO</p></div>
+
+</body>
+</html>
